@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fito's Survey Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Help us improve the platform by filling the form</p>
+      </header>
+      <section>
+        <form id="survey-form">
+          <fieldset>
+            <legend>General Information</legend>
+            <div class="input-field">
+              <label id="name-label" for="name"
+                ><span class="required-star">*</span>Name:<span
+                  class="input-example"
+                  >e.g: John</span
+                ><input id="name" type="text" placeholder=" " required
+              /></label>
+            </div>
+            <div class="input-field">
+              <label id="email-label" for="email"
+                ><span class="required-star">*</span>Email:<span
+                  class="input-example"
+                  >e.g: sample@example.com</span
+                ><input id="email" type="email" placeholder=" " required
+              /></label>
+            </div>
+            <div class="input-field">
+              <label id="number-label" for="number"
+                ><span class="label-text"
+                  >Age:<span class="input-example">e.g: 18</span></span
+                ><input
+                  id="number"
+                  type="number"
+                  min="7"
+                  max="120"
+                  placeholder=" "
+              /></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Reference</legend>
+            <div class="input-field">
+              <label>
+                <span class="label-text"
+                  >Where did you hear about us?<span class="input-example"
+                    >e.g: freeCodeCamp forum</span
+                  ></span
+                >
+                <select id="dropdown">
+                  <option value=""></option>
+                  <option value="1">freeCodeCamp Forum</option>
+                  <option value="2">freeCodeCamp Youtube channel</option>
+                  <option value="3">other</option>
+                </select>
+              </label>
+            </div>
+            <div class="input-field">
+              <label>
+                <span class="label-text">What is your current role?</span>
+                <label class="radio-checkbox-label"
+                  ><input type="radio" name="role" value="student" />
+                  Student</label
+                >
+                <label class="radio-checkbox-label"
+                  ><input type="radio" name="role" value="part-time" /> Part
+                  time programmer/designer</label
+                >
+                <label class="radio-checkbox-label"
+                  ><input type="radio" name="role" value="full-time" /> Full
+                  time programmer/designer</label
+                >
+              </label>
+            </div>
+            <div class="input-field">
+              <label>
+                <span class="label-text">What are you currently learning</span>
+                <label class="radio-checkbox-label"
+                  ><input type="checkbox" value="web-development" /> Web
+                  development</label
+                >
+                <label class="radio-checkbox-label"
+                  ><input type="checkbox" value="security" /> Security</label
+                >
+                <label class="radio-checkbox-label"
+                  ><input type="checkbox" value="machine-learning" /> Machine
+                  learning</label
+                >
+                <label class="radio-checkbox-label"
+                  ><input type="checkbox" value="artificial-inteligence" />
+                  Artificial inteligence</label
+                >
+                <label class="radio-checkbox-label"
+                  ><input type="checkbox" value="data-science" /> Data
+                  Science</label
+                >
+                <label class="radio-checkbox-label"
+                  ><input type="checkbox" value="android-development" /> Android
+                  development</label
+                >
+                <label class="radio-checkbox-label"
+                  ><input type="checkbox" value="ios-development" /> IOS
+                  development</label
+                >
+                <label class="radio-checkbox-label"
+                  ><input type="checkbox" value="blockchain-development" />
+                  Blockchain development</label
+                >
+                <label class="radio-checkbox-label"
+                  ><input type="checkbox" value="data-analysis" /> Data
+                  analysis</label
+                >
+              </label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Additional Information</legend>
+            <div class="input-field">
+              <label for="textarea"
+                ><span class="label-text">Do you want to add anything?</span
+                ><span class="input-example">e.g: Web design is awsome!</span
+                ><textarea id="textarea" rows="3"></textarea>
+              </label>
+            </div>
+          </fieldset>
+          <input type="submit" id="submit" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>I hope you enjoyed this little project :)</p>
+      <p class="copyright">Nocopyright - Fitotech</p>
+    </footer>
+  </body>
+</html>

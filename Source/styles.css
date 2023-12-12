@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+/* RESETS AND BODY AND FONTS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background-color: #fffdd0;
+}
+h1::selection,
+p::selection,
+legend::selection,
+label::selection,
+input::selection,
+textarea::selection,
+.label-text::selection,
+.required-star::selection {
+  background: black;
+  color: white;
+}
+.input-example::selection {
+  background-color: #999999;
+  color: white;
+}
+h1,
+legend {
+  font-family: "Nunito", sans-serif;
+}
+/* MAIN SECTION */
+section {
+  width: 80%;
+  max-width: 600px;
+  min-width: 200px;
+  /* height: 100px; */
+  background-color: #f7f7f7;
+  margin: 0 auto;
+  border-radius: 30px;
+  box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.03);
+  padding: 35px 20px;
+}
+
+/* HEADER */
+h1,
+p {
+  text-align: center;
+}
+h1 {
+  margin: 20px auto 0 auto;
+  font-weight: 800;
+  font-size: 40px;
+}
+p {
+  margin: 0 auto 30px auto;
+  font-style: italic;
+}
+
+/* FORM FIELDSETS */
+fieldset {
+  padding: 10px 0;
+  border: 0;
+  margin-bottom: 100px;
+}
+fieldset:last-of-type {
+  margin: 0;
+}
+legend {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* INPUT FIELD */
+.input-field {
+  margin-top: 15px;
+}
+/* LABELS */
+label {
+  font-size: 25px;
+  text-align: right;
+  position: relative;
+}
+.label-text {
+  padding-left: 15px;
+  width: 80%;
+}
+.radio-checkbox-label {
+  font-size: 18px;
+  display: block;
+  text-align: left;
+  margin: 5px 0 0 30px;
+}
+.required-star {
+  font-weight: 600;
+  color: red;
+  padding-left: 5px;
+}
+/* INPUTS */
+input,
+textarea,
+select {
+  margin-top: 10px;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 1px solid black;
+  /* box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.03); */
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  display: block;
+  padding: 6px 5px 5px 20px;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.02);
+  font-size: 16px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  filter: hue-rotate(195deg) brightness(300%);
+  width: 15px;
+  height: 15px;
+  box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.02);
+}
+textarea {
+  resize: vertical;
+  max-height: 300px;
+  min-height: 30px;
+}
+/* input[type='radio'] {
+  -webkit-appearance:none;
+  width:15px;
+  height:15px;
+  border: 1px solid black;
+  border-radius:50%;
+  outline:none;
+}
+input[type='radio']:before {
+  content:'';
+  display:block;
+  width:60%;
+  height:60%;   
+  border-radius:50%;
+  margin: 25% auto;
+}
+input[type='radio']:checked:before {
+  background: #EFDC75;
+} */
+.input-example {
+  font-size: 12px;
+  /* float: right; */ /* This works without position: absolute */
+  position: absolute;
+  right: 15px; /* this puts it to the right */
+  /* left: 90px; */ /* This sticks it to label text */
+  /* top: 8px; */ /* this is aligned to the label text */
+  top: 18px; /* this is the current alignment */
+  color: #999999;
+}
+@media screen and (max-width: 750px) {
+  .input-example {
+    display: none;
+  }
+}
+
+/* SUBMIT BUTTON */
+input[type="submit"] {
+  width: 60%;
+  font-size: 25px;
+  padding: 5px 0;
+  margin: 50px auto 0 auto;
+  display: block;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.02);
+}
+input[type="submit"]:hover {
+  outline: 1px solid black;
+}
+input[type="submit"]:active {
+  outline: 3px solid black;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  padding: 30px;
+}
+footer p {
+  margin: 0;
+  font-size: 20px;
+}
+.copyright {
+  font-size: 16px;
+  font-style: italic;
+  color: #999999;
+}
